@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NexaTech Solutions — dossier complet de l'entreprise fictive de stage : identité, services, historique, équipe et stack technique.">
+<title>NexaTech Solutions — Julien Jegu · BTS SIO SISR</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+<div id="progress-bar" aria-hidden="true"></div>
+
+<div id="loader" role="status" aria-label="Chargement en cours">
+  <div class="loader-inner">
+    <div class="loader-sys">Initialisation du système</div>
+    <div class="loader-name">Julien Jegu</div>
+    <div class="loader-sub">Portfolio · BTS SIO SISR</div>
+    <div class="loader-track"><div class="loader-fill"></div></div>
+    <div class="loader-pct" id="lpct">000%</div>
+  </div>
+</div>
+
+<nav id="main-nav" aria-label="Navigation principale">
+  <a class="nav-logo" href="index.html">
+    <span class="nav-status" aria-hidden="true"></span>J. Jegu
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="about.html">Profil</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="skills.html">Compétences</a></li>
+    <li><a href="nexatech.html">Entreprise</a></li>
+    <li><a href="formation.html">Formation</a></li>
+    <li><a href="references.html">Références</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+  <section class="page-section surface" aria-labelledby="nt-title">
+    <div class="section-inner">
+
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span aria-current="page">Entreprise</span>
+      </nav>
+
+      <p class="section-label reveal from-bottom">Entreprise fictive</p>
+      <h1 class="section-title reveal from-bottom" id="nt-title" style="margin-bottom:24px">NexaTech Solutions</h1>
+
+      <!-- En-tête entreprise -->
+      <div class="nt-header reveal from-bottom">
+        <div class="nt-logo" aria-hidden="true">NT</div>
+        <div>
+          <h2 class="nt-name">NexaTech Solutions</h2>
+          <p class="nt-tagline">Développement logiciel · Cybersécurité · Conseil IT</p>
+          <div class="nt-badges">
+            <span class="nt-badge nt-badge-green">Active</span>
+            <span class="nt-badge">Lyon, France</span>
+            <span class="nt-badge">Fondée 2024</span>
+            <span class="nt-badge">12 collaborateurs</span>
+            <span class="nt-badge">PME · SAS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Onglets -->
+      <div class="nt-tabs" role="tablist" aria-label="Sections NexaTech">
+        <button class="nt-tab active" data-tab="identite" role="tab" aria-selected="true"  aria-controls="tab-identite">Identité</button>
+        <button class="nt-tab"        data-tab="services"  role="tab" aria-selected="false" aria-controls="tab-services">Services</button>
+        <button class="nt-tab"        data-tab="historique" role="tab" aria-selected="false" aria-controls="tab-historique">Historique</button>
+        <button class="nt-tab"        data-tab="equipe"    role="tab" aria-selected="false" aria-controls="tab-equipe">Équipe &amp; Stack</button>
+      </div>
+
+      <!-- Onglet Identité -->
+      <div class="nt-pane active" id="tab-identite" role="tabpanel">
+        <div class="nt-mvvc">
+          <div class="nt-mvvc-card reveal from-bottom">
+            <div class="nt-card-icon" aria-hidden="true">Miss</div>
+            <h3 class="nt-mvvc-title">Mission</h3>
+            <p class="nt-mvvc-desc">Accompagner les entreprises dans leur transformation numérique avec des solutions fiables, sécurisées et adaptées à leurs besoins réels.</p>
+          </div>
+          <div class="nt-mvvc-card reveal from-bottom">
+            <div class="nt-card-icon" aria-hidden="true">Vis</div>
+            <h3 class="nt-mvvc-title">Vision</h3>
+            <p class="nt-mvvc-desc">Devenir la référence régionale en solutions IT pour PME, en combinant expertise technique et proximité client durable.</p>
+          </div>
+          <div class="nt-mvvc-card reveal from-bottom">
+            <div class="nt-card-icon" aria-hidden="true">Val</div>
+            <h3 class="nt-mvvc-title">Valeurs</h3>
+            <p class="nt-mvvc-desc">Transparence, innovation, rigueur technique et engagement fort envers la sécurité et la confidentialité des données clients.</p>
+          </div>
+          <div class="nt-mvvc-card reveal from-bottom">
+            <div class="nt-card-icon" aria-hidden="true">Clt</div>
+            <h3 class="nt-mvvc-title">Clients</h3>
+            <p class="nt-mvvc-desc">TPE, PME, artisans et collectivités locales cherchant à digitaliser leurs activités en région Auvergne-Rhône-Alpes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Onglet Services -->
+      <div class="nt-pane" id="tab-services" role="tabpanel">
+        <div class="nt-services">
+          <div class="nt-service-card reveal from-bottom">
+            <div class="nt-svc-label">Web</div>
+            <h3 class="nt-svc-title">Développement Web</h3>
+            <p class="nt-svc-desc">Sites vitrines, e-commerce, applications web métier, API REST et intégrations tierces.</p>
+            <div class="pc-tags" style="margin-top:10px">
+              <span class="tag">React</span><span class="tag">PHP</span><span class="tag">Node.js</span><span class="tag">MySQL</span>
+            </div>
+          </div>
+          <div class="nt-service-card reveal from-bottom">
+            <div class="nt-svc-label">Sec</div>
+            <h3 class="nt-svc-title">Cybersécurité</h3>
+            <p class="nt-svc-desc">Audits de sécurité, tests de pénétration, mise en conformité RGPD et formation des équipes.</p>
+            <div class="pc-tags" style="margin-top:10px">
+              <span class="tag">Pentest</span><span class="tag">RGPD</span><span class="tag">SIEM</span><span class="tag">VPN</span>
+            </div>
+          </div>
+          <div class="nt-service-card reveal from-bottom">
+            <div class="nt-svc-label">Infra</div>
+            <h3 class="nt-svc-title">Infra &amp; Réseau</h3>
+            <p class="nt-svc-desc">Installation de serveurs, configuration réseau, VLAN, VPN, supervision et maintenance préventive.</p>
+            <div class="pc-tags" style="margin-top:10px">
+              <span class="tag">Linux</span><span class="tag">Windows Server</span><span class="tag">Cisco</span><span class="tag">Docker</span>
+            </div>
+          </div>
+          <div class="nt-service-card reveal from-bottom">
+            <div class="nt-svc-label">N1/N2</div>
+            <h3 class="nt-svc-title">Support N1/N2</h3>
+            <p class="nt-svc-desc">Helpdesk, gestion des incidents, maintenance du parc informatique et administration Active Directory.</p>
+            <div class="pc-tags" style="margin-top:10px">
+              <span class="tag">GLPI</span><span class="tag">AD</span><span class="tag">ITSM</span><span class="tag">TeamViewer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Onglet Historique -->
+      <div class="nt-pane" id="tab-historique" role="tabpanel">
+        <div class="nt-pane-label">Chronologie</div>
+        <div class="nt-tl-h">
+          <div class="nt-tl-h-card present">
+            <p class="nt-tl-h-date">2024.01</p>
+            <h3 class="nt-tl-h-title">Création de NexaTech</h3>
+            <p class="nt-tl-h-desc">Fondation à Lyon avec une vision : rendre le numérique accessible aux TPE/PME d'Auvergne-Rhône-Alpes.</p>
+          </div>
+          <div class="nt-tl-h-card present">
+            <p class="nt-tl-h-date">2024.03</p>
+            <h3 class="nt-tl-h-title">Première équipe</h3>
+            <p class="nt-tl-h-desc">Recrutement des premiers développeurs et d'une designer UX. Livraison de trois projets clients majeurs.</p>
+          </div>
+          <div class="nt-tl-h-card present">
+            <p class="nt-tl-h-date">2025.01</p>
+            <h3 class="nt-tl-h-title">Pôle Cybersécurité</h3>
+            <p class="nt-tl-h-desc">Création d'un département dédié à la sécurité informatique, aux audits et à la supervision réseau.</p>
+          </div>
+          <div class="nt-tl-h-card future">
+            <p class="nt-tl-h-date">2025 →</p>
+            <h3 class="nt-tl-h-title">Objectif : 25 clients actifs</h3>
+            <p class="nt-tl-h-desc">Expansion régionale avec ouverture d'une antenne à Grenoble et recrutement de quatre nouveaux talents.</p>
+          </div>
+        </div>
+
+        <div class="nt-pane-label" style="margin-top:20px">Objectifs futurs</div>
+        <div class="nt-goals">
+          <div class="nt-goal-card">
+            <div class="nt-card-icon" aria-hidden="true">Exp</div>
+            <h3 class="nt-mvvc-title">Expansion</h3>
+            <p class="nt-mvvc-desc">Ouverture d'une antenne à Grenoble d'ici fin 2025.</p>
+          </div>
+          <div class="nt-goal-card">
+            <div class="nt-card-icon" aria-hidden="true">For</div>
+            <h3 class="nt-mvvc-title">Formation</h3>
+            <p class="nt-mvvc-desc">Programme de formation certifié pour les équipes clientes.</p>
+          </div>
+          <div class="nt-goal-card">
+            <div class="nt-card-icon" aria-hidden="true">IA</div>
+            <h3 class="nt-mvvc-title">Pôle IA &amp; Data</h3>
+            <p class="nt-mvvc-desc">Nouveau département dédié à l'intelligence artificielle et à l'analyse de données.</p>
+          </div>
+          <div class="nt-goal-card">
+            <div class="nt-card-icon" aria-hidden="true">ISO</div>
+            <h3 class="nt-mvvc-title">ISO 27001</h3>
+            <p class="nt-mvvc-desc">Certification ISO 27001 en management de la sécurité de l'information.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Onglet Équipe & Stack -->
+      <div class="nt-pane" id="tab-equipe" role="tabpanel">
+        <div class="nt-pane-label">Équipe</div>
+        <div class="nt-team-compact">
+          <div class="nt-tc ceo">
+            <p class="nt-tc-dept">Direction</p>
+            <div class="nt-tc-member">
+              <div class="nt-tc-avatar" style="background:linear-gradient(135deg,#c9a96e,#8b6914)" aria-hidden="true">JJ</div>
+              <div><p class="nt-tc-name">Julien Jegu</p><p class="nt-tc-role">DG &amp; Fondateur</p></div>
+            </div>
+          </div>
+          <div class="nt-tc">
+            <p class="nt-tc-dept">Dev</p>
+            <div class="nt-tc-member">
+              <div class="nt-tc-avatar" style="background:#3b82f6" aria-hidden="true">KB</div>
+              <div><p class="nt-tc-name">Kevin Blanc</p><p class="nt-tc-role">Lead Dev Backend</p></div>
+            </div>
+            <div class="nt-tc-member">
+              <div class="nt-tc-avatar" style="background:#ec4899" aria-hidden="true">SM</div>
+              <div><p class="nt-tc-name">Sarah Morel</p><p class="nt-tc-role">Dev Frontend</p></div>
+            </div>
+            <div class="nt-tc-member">
+              <div class="nt-tc-avatar" style="background:#8b5cf6" aria-hidden="true">TL</div>
+              <div><p class="nt-tc-name">Thomas Laurent</p><p class="nt-tc-role">Full Stack</p></div>
+            </div>
+          </div>
+          <div class="nt-tc">
+            <p class="nt-tc-dept">CyberSec</p>
+            <div class="nt-tc-member">
+              <div class="nt-tc-avatar" style="background:#ef4444" aria-hidden="true">MC</div>
+              <div><p class="nt-tc-name">Marc Chauvet</p><p class="nt-tc-role">RSSI</p></div>
+            </div>
+            <div class="nt-tc-member">
+              <div class="nt-tc-avatar" style="background:#f97316" aria-hidden="true">EB</div>
+              <div><p class="nt-tc-name">Emma Bourdin</p><p class="nt-tc-role">Analyste SOC</p></div>
+            </div>
+          </div>
+          <div class="nt-tc">
+            <p class="nt-tc-dept">Infra</p>
+            <div class="nt-tc-member">
+              <div class="nt-tc-avatar" style="background:#f59e0b" aria-hidden="true">LF</div>
+              <div><p class="nt-tc-name">Lucie Faure</p><p class="nt-tc-role">DevOps</p></div>
+            </div>
+            <div class="nt-tc-member">
+              <div class="nt-tc-avatar" style="background:#06b6d4" aria-hidden="true">RD</div>
+              <div><p class="nt-tc-name">Romain Denis</p><p class="nt-tc-role">Admin Sys &amp; Réseau</p></div>
+            </div>
+          </div>
+          <div class="nt-tc">
+            <p class="nt-tc-dept">Support</p>
+            <div class="nt-tc-member">
+              <div class="nt-tc-avatar" style="background:#6366f1" aria-hidden="true">CP</div>
+              <div><p class="nt-tc-name">Clara Petit</p><p class="nt-tc-role">Support N1/N2</p></div>
+            </div>
+            <div class="nt-tc-member">
+              <div class="nt-tc-avatar" style="background:#84cc16" aria-hidden="true">PG</div>
+              <div><p class="nt-tc-name">Paul Garnier</p><p class="nt-tc-role">Commercial</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nt-stack-mini">
+          <div class="nt-stack-row">
+            <div class="nt-stack-label">Frontend</div>
+            <div class="pc-tags" style="margin:0"><span class="tag">React</span><span class="tag">Vue.js</span><span class="tag">HTML5/CSS3</span><span class="tag">Figma</span></div>
+          </div>
+          <div class="nt-stack-row">
+            <div class="nt-stack-label">Backend</div>
+            <div class="pc-tags" style="margin:0"><span class="tag">PHP 8</span><span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">GraphQL</span></div>
+          </div>
+          <div class="nt-stack-row">
+            <div class="nt-stack-label">Infra / DevOps</div>
+            <div class="pc-tags" style="margin:0"><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Git/GitHub</span><span class="tag">Nginx</span><span class="tag">CI/CD</span></div>
+          </div>
+          <div class="nt-stack-row">
+            <div class="nt-stack-label">CyberSec</div>
+            <div class="pc-tags" style="margin:0"><span class="tag">Nmap</span><span class="tag">Wireshark</span><span class="tag">pfSense</span><span class="tag">OpenVPN</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© 2026 Julien Jegu</span>
+  <span>Portfolio BTS SIO SISR</span>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
