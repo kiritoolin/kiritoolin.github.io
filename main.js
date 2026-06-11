@@ -97,6 +97,37 @@ const counterObs = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.counter').forEach(el => counterObs.observe(el));
 
+// ─── Hamburger menu mobile ───
+(function () {
+  const navEl = document.getElementById('main-nav');
+  const navLinks = navEl && navEl.querySelector('.nav-links');
+  if (!navEl || !navLinks) return;
+
+  const burger = document.createElement('button');
+  burger.className = 'nav-burger';
+  burger.setAttribute('aria-label', 'Ouvrir le menu');
+  burger.setAttribute('aria-expanded', 'false');
+  burger.innerHTML = '<span></span><span></span><span></span>';
+  navEl.appendChild(burger);
+
+  function closeMenu() {
+    navLinks.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    burger.setAttribute('aria-label', 'Ouvrir le menu');
+  }
+
+  burger.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    burger.classList.toggle('open', isOpen);
+    burger.setAttribute('aria-expanded', isOpen);
+    burger.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+  });
+
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+})();
+
 // ─── Onglets NexaTech (nexatech.html uniquement) ───
 document.querySelectorAll('.nt-tab').forEach(btn => {
   btn.addEventListener('click', () => {
